@@ -18,7 +18,6 @@ import java.awt.event.MouseMotionAdapter;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Iterator;
 import java.util.Random;
 
@@ -74,7 +73,7 @@ public class SnapShot extends JFrame {
     }
 
     private static String getNowDateTime() {
-        String now = new SimpleDateFormat("ddMMyyyyhhmmss").format(new java.util.Date());
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new java.util.Date());
         return now;
     }
 
